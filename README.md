@@ -17,3 +17,9 @@
 ## Package Development and sharing your work
 
 --- 
+## References 
+### Books 
+* Hello Python 
+* Head First Python
+* Programmimng for Kids 
+
