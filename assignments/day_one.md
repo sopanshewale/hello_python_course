@@ -21,3 +21,25 @@ The mean of 10 and 20 is: 15.0
 
 ```
 ---
+
+# Problem 1: Write a script to find the length (number of charectors) of string. 
+
+## Task
+* Name the script as - *length_string.py* 
+* The script takes string as command line argument. The script prints the length of the string. You need to use *format* method on string to print the output. 
+
+## Sample Input 
+```
+$ length_string.py i_am_your_string
+ 
+
+```
+
+## Sample Output 
+```
+
+The length of string: i_am_your_string is: 16
+
+```
+---
+
