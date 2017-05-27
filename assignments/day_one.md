@@ -22,7 +22,7 @@ The mean of 10 and 20 is: 15.0
 ```
 ---
 
-# Problem 1: Write a script to find the length (number of charectors) of string. 
+# Problem 2: Write a script to find the length (number of charectors) of string. 
 
 ## Task
 * Name the script as - *length_string.py* 
