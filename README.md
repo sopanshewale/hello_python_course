@@ -17,11 +17,19 @@
 * Division
 * Remainder, Quetient
 * String
-## Loops 
+## Lists 
+* Creation of Lists
+* extend, append, sort, del, sorted etc operations
+## Loops
+* for
+* while 
 ## Making Decisions 
+* if, elif, else
 ## Strings 
-## Lists
+* format, split operations, find, endswith, startwith (kind of regex) 
 ## Dictionaries
+* Defining dictionaries
+* Applications of dictionaries
 ## Functions
 ## Modules
 ## Object Orientation
