@@ -9,6 +9,8 @@
 * Display the proper number on the screen. 
 * Refer following image for conversion 
 
+![Phone Dial Pad](https://github.com/sopanshewale/hello_python_course/blob/master/assignments/phone-dial-pad.png "Phone Dial Pad")
+
 ## Sample Input 
 ```
 $  fancy_to_normal.py +91-9850-kitcat   
