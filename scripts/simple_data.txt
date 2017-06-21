@@ -1,0 +1,3 @@
+Hello to writing data into file
+Line ------2
+Line ------3
