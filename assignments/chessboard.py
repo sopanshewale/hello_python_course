@@ -41,19 +41,57 @@ class chessboard(object):
         return self.tour[self.knight] 
 
     def next_possible_moves(self):
+       '''This returns all possible moves for Knight - takes care of already visited knight squares
+       '''
        c = self.tour[self.knight] # handle empty 
        moves = []
-       moves.append([c[0]+2, c[1]+1]) 
-       moves.append([c[0]+2, c[1]-1]) 
-       moves.append([c[0]+1, c[1]-2]) 
-       moves.append([c[0]-1, c[1]-2]) 
-       moves.append([c[0]-2, c[1]-1]) 
-       moves.append([c[0]-2, c[1]+1]) 
-       moves.append([c[0]-1, c[1]+2]) 
-       moves.append([c[0]+1, c[1]+2]) 
+       if c[0]+2 <8 and c[1]+1 <8:
+          moves.append([c[0]+2, c[1]+1]) 
+       if c[1]-1>-1 and c[0]+2 <8: 
+          moves.append([c[0]+2, c[1]-1]) 
+       if c[0]+1 < 8 and c[1]-2 >-1: 
+          moves.append([c[0]+1, c[1]-2]) 
+       if c[0]-1 >-1  and c[1]-2 >-1: 
+          moves.append([c[0]-1, c[1]-2]) 
+       if c[0]-2 >-1  and c[1]-1 >-1: 
+          moves.append([c[0]-2, c[1]-1]) 
+       if c[0]-2 >-1  and c[1]+1<8: 
+          moves.append([c[0]-2, c[1]+1]) 
+       if c[0]-1 >-1  and c[1]+2 <8: 
+          moves.append([c[0]-1, c[1]+2]) 
+       if c[0]+1 <8  and c[1]+2 <8: 
+          moves.append([c[0]+1, c[1]+2]) 
        return moves
 
-  
+    def number_of_moves(self, row, col):
+        no_moves = 0
+        if row+2 <8 and col+1 <8:
+           print (self.board[row+2][col+1])
+           if self.board[row+2][col+1] == 0:
+                no_moves += 1
+        if col-1>-1 and row+2 <8:
+           if self.board[row+2][col-1] == 0:
+                no_moves += 1
+        if row+1 < 8 and col-2 >-1:
+           if self.board[row+1][col-2] == 0:
+                no_moves += 1
+        if row-1 >-1  and col-2 >-1:
+           if self.board[row-1][col-2] == 0:
+                no_moves += 1
+        if row-2 >-1  and col-1 >-1:
+           if self.board[row-2][col-1] == 0:
+                no_moves += 1
+        if row-2 >-1  and col+1<8:
+           if self.board[row-2][col+1] == 0:
+                no_moves += 1
+        if row-1 >-1  and col+2 <8:
+           if self.board[row-1][col+2] == 0:
+                no_moves += 1
+        if row+1 <8  and col+2 <8:
+           if self.board[row+1][col+2] == 0:
+                no_moves += 1
+        return no_moves
+     
     def remove_knight(self):
         pass  
          
